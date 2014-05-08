@@ -64,7 +64,7 @@ public:
 	}
 };
 
-class SceneObject
+class sSceneObject
 {
 private:
 protected:
@@ -79,11 +79,11 @@ public:
 	unsigned int m_ZOrder;
 	float m_PosX, m_PosY;
 	std::string m_Name;
-	std::list<SceneObject*> m_SceneObjects;
+	std::list<sSceneObject*> m_SceneObjects;
 	void update();
 };
 
-class SceneManager
+class sSceneManager
 {
 protected:
 	void addLayerObjects(stwoDLayer *Layer, XMLElement *Element);
@@ -105,3 +105,5 @@ public:
 
 	void update();
 };
+
+#endif // 2DSDLSCENEMANAGER_H_INCLUDED
